@@ -9,5 +9,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run python file
-        run: python hello.py
+      - name: Build Docker image
+        run: docker build -t tstark007/hello .
+      
+      - name: Run Docker Container
+        run: docker run tstark007/hello
