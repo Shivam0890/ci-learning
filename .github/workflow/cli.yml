@@ -10,4 +10,4 @@ jobs:
         uses: actions/Checkout@v4
 
       - name: Run python file
-        run: python hello.py
+        run: python wrong_hello.py
